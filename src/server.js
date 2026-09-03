@@ -1,7 +1,7 @@
 import express from 'express'
 
 const app = express()
-const port = "Seja bem vindo a minha API"
+const port = 3000
 
 app.use(express.json())
 
@@ -10,5 +10,5 @@ app.get("/", (_req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`API rodando em: http://localhost:${port}`);
+    console.log(`API rodando em: http://localhost: ${port}`);
 })
